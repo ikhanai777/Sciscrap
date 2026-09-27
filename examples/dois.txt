@@ -1,0 +1,7 @@
+# One DOI per line. Lines starting with # are ignored (anything without a DOI is ignored).
+# doi.org URLs, "doi:" prefixes, CSV and BibTeX files work too.
+10.1038/nature12373
+https://doi.org/10.1126/science.1225829
+doi:10.1038/nature14133
+10.1016/j.cell.2014.05.010
+10.1038/s41467-022-35400-4

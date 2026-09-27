@@ -1,0 +1,10 @@
+# Merge into ~/.hermes/config.yaml to give Hermes Agent native sciscrap tools over MCP.
+# Replace <you> with your WSL username (run `whoami`) and <WindowsUser> with your Windows user name.
+mcp_servers:
+  sciscrap:
+    command: /home/<you>/Sciscrap/.venv/bin/sciscrap-mcp
+    args: []
+    env:
+      SCISCRAP_OUT: /mnt/c/Users/<WindowsUser>/Papers
+      SCISCRAP_EMAIL: you@example.com
+    timeout: 3600   # batch downloads can take a long time
