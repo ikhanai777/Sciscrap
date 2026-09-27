@@ -111,6 +111,10 @@ Check it responds: run `hermes` and say hello.
 
 ## 5. Install sciscrap (inside Ubuntu)
 
+> **Shortcut:** Hermes can do steps 5 and 6 for you. Paste the prompt from
+> [hermes/DEPLOY.md](../hermes/DEPLOY.md) into Hermes, then restart it. Or run it yourself in one command:
+> `bash ~/Sciscrap/scripts/hermes_deploy.sh --email you@example.com` (after cloning).
+
 ```bash
 cd ~
 git clone https://github.com/ikhanai777/Sciscrap.git

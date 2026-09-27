@@ -12,7 +12,8 @@ resumable, from open-access sources and Sci-Hub (`https://www.sci-hub.in` plus f
   and failures go to `failed_dois.txt` for one-command retry
 - Windows-safe file names; `--json` output and an MCP server for AI agents (e.g. Nous Hermes Agent)
 
-**Deploying with Nous Hermes Agent on Windows 10 → [docs/HERMES_WINDOWS.md](docs/HERMES_WINDOWS.md)**
+**Deploying with Nous Hermes Agent on Windows 10 → [docs/HERMES_WINDOWS.md](docs/HERMES_WINDOWS.md)**  
+**Let Hermes install it for you (paste-in prompt + agent steps) → [hermes/DEPLOY.md](hermes/DEPLOY.md)**
 
 ## Install
 

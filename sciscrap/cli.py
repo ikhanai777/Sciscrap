@@ -15,6 +15,7 @@ import argparse
 import csv
 import json
 import logging
+import os
 import sys
 from pathlib import Path
 
@@ -33,7 +34,10 @@ def _add_common(p: argparse.ArgumentParser) -> None:
 
 
 def _add_download_opts(p: argparse.ArgumentParser) -> None:
-    p.add_argument("-o", "--out", default="papers", help="output folder (default: ./papers)")
+    p.add_argument(
+        "-o", "--out", default=os.environ.get("SCISCRAP_OUT") or "papers",
+        help="output folder (default: $SCISCRAP_OUT, else ./papers)",
+    )
     p.add_argument("-w", "--workers", type=int, help="parallel downloads (default 3)")
     p.add_argument("--sources", help="comma list, in order: oa,scihub (default) | scihub | oa | scihub,oa")
     p.add_argument("--mirrors", help="comma list of Sci-Hub mirrors (default starts with https://www.sci-hub.in)")
